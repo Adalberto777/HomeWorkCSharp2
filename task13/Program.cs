@@ -3,6 +3,13 @@
 Console.WriteLine("Enter a positive integer");
 
 string input = Console.ReadLine();
-int lenght = lenght.input;
+int size = input.Length;
 
-Console.WriteLine(lenght);
+if(size < 3)
+{
+    Console.WriteLine("третьей цифры нет");
+}
+else
+{
+    Console.WriteLine(input[2]);
+}
