@@ -4,19 +4,17 @@ Console.WriteLine("Enter a positive integer");
 
 int number = int.Parse(Console.ReadLine());
 
-int number1 = number;
-int i = 1;
-if(number / 100 == 0)
+
+if(number < 100)
 {
     Console.WriteLine("no third number");
 }
 else
 {
-   while(number / i > 99)
+   while(number > 999)
    {
-    number1 = number/i;
-    i = i * 10;    
+    number /= 10;     // number = number / 10
    } 
-   Console.WriteLine(number1% 10);
+   Console.WriteLine(number % 10);
 }
 
