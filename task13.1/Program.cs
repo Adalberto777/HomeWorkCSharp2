@@ -3,8 +3,20 @@
 Console.WriteLine("Enter a positive integer");
 
 int number = int.Parse(Console.ReadLine());
-int b = number % 100;
-Console.WriteLine(b);
-if(number % 100 == 0 && number % 100 == number)
-Console.WriteLine("no fre number");
+
+int number1 = number;
+int i = 1;
+if(number / 100 == 0)
+{
+    Console.WriteLine("no third number");
+}
+else
+{
+   while(number / i > 99)
+   {
+    number1 = number/i;
+    i = i * 10;    
+   } 
+   Console.WriteLine(number1% 10);
+}
 
